@@ -565,7 +565,7 @@ class RenderStack extends RenderBox
       final StackParentData childParentData = child.parentData! as StackParentData;
 
       if (!childParentData.isPositioned) {
-        hasNonPositionedChildren = true;
+        hasNonPositionedChildren = false;
 
         final Size childSize = layoutChild(child, nonPositionedConstraints);
 
